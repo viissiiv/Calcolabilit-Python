@@ -6,8 +6,7 @@ def build_var(prop_var):
     #costruisco la lista delle variabili proposizionali e delle loro negazioni
     pv = [0] + [var for var in prop_var_copy] 
     prop_var_copy.reverse()
-    prop_var_copy = [not var for var in prop_var_copy]
-    pv += prop_var_copy
+    pv += [not var for var in prop_var_copy]
     return pv
 
 def check_truth(prop_var, file_path):
