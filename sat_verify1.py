@@ -1,7 +1,6 @@
 from itertools import product
 import random
 
-# modifica di sat_verify come chiesto dal prof
 
 def build_var(prop_var):
     prop_var_copy = [var for var in prop_var] #copia di prop_var
